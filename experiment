@@ -1,0 +1,10 @@
+1. collect the radiated qubits and entangle them with a addiational output qubit .
+2. impose a set of quantum gates on the output qubit 
+3. Perform a SWAP test between the referance system(part 1) and the radiated-derived system that we just created .
+The resulting overlap indiactes how much of the original quantum correlation can be operationally recovered which basically means up to what extent did we descramble the information .
+
+The quantum gates used :
+1. cx , cx (these gates allow information that is distributed across many qubits to be coherently concentrated into one system)
+2. rx , ry , rz (these gates are used to align the recovered state into the correct basis)
+
+Applying these gates to the radiation-derived system and optimizing the rotation angles via a grid search, the SWAP test yielded an overlap of ~75%, showing that a substantial fraction of the original quantum correlations can be recovered despite the information not being directly measurable.
